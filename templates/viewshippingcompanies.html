@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>DATA INFORMATION</h3>  
+<table border=5>  
+    <thead> 
+ 	<td>ID</td> 
+        <td>idcompany</td>    
+        <td>companyname</td>  
+
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["idcompany"]}}</td>  
+            <td>{{row["companyname"]}}</td>  
+
+  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html> 

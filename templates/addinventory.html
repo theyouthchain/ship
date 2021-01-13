@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("/static/forms.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+<div class="bg-img">
+  <form action="/savedetailsinventory" class="container"  method="post">
+    <h1>INVENTORY</h1>
+    <label for="quantity"><b>QUANTITY</b></label>
+    <input type="text" placeholder="Enter quantity" name="quantity" required>
+    <label for="item_description"><b>ITEM DESCRIPTION</b></label>
+    <input type="text" placeholder="Enter item_description" name="item_description" required>
+    <label for="sku"><b>SKU</b></label>
+    <input type="text" placeholder="Enter sku" name="sku" required>
+    <label for="weight"><b>WEIGHT</b></label>
+    <input type="text" placeholder="Enter weight" name="weight" required>
+    <label for="itemspercase"><b>ITEMSPERCASE</b></label>
+    <input type="text" placeholder="Enter itemspercase" name="itemspercase" required>
+    <label for="warehouseposition"><b>WAREHOUSE POSITION</b></label>
+    <input type="text" placeholder="Enter warehouseposition" name="warehouseposition" required>
+
+    <button type="submit" class="btn">SUBMIT</button>
+  </form>
+</div>
+
+
+    <h1>                 </h1>
+    <h1>                 </h1>
+    <a href="/viewinventory">VIEW_LIST..........</a> 
+
+ 
+
+
+
+    <h1>                 </h1>
+    <h1>                 </h1>
+    <a href="/deleteinventory">DELETE_RECORD.......</a> 
+
+
+
+
+</body>
+</html>

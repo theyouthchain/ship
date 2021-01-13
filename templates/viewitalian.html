@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>DATA INFORMATION</h3>  
+<table border=5>  
+    <thead> 
+ 	<td>ID</td> 
+        <td>idcity</td>    
+        <td>city</td> 
+        <td>idprovince</td> 
+         <td>province</td>
+         <td>region</td>
+
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["idcity"]}}</td>  
+            <td>{{row["city"]}}</td>
+            <td>{{row["idprovince"]}}</td>
+            <td>{{row["province"]}}</td>
+            <td>{{row["region"]}}</td>  
+
+  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html> 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Add Shipping</title>  
+</head>  
+<body>  
+    <h2>Shipping Price Information</h2>   
+    <form action = "/savedetails" method="post">  
+    <table>  
+        <tr><td>ID_Carrier</td><td><input type="text" name="id_carrier"></td></tr>  
+        <tr><td>ID_province</td><td><input type="text" name="id_province"></td></tr>  
+        <tr><td>WEIGHT</td><td><input type="text" name="weight"></td></tr>
+	<tr><td>PRICE</td><td><input type="text" name="price"></td></tr>  
+        <tr><td><input type="submit" value="Submit"></td></tr>  
+    </table>  
+    </form>  
+</body>  
+</html> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>Employee Information</h3>  
+<table border=5>  
+    <thead> 
+ 	<td>ID</td> 
+        <td>ID_carrier</td>  
+        <td>ID_province</td>  
+        <td>Weight</td>  
+        <td>Price</td>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["id_carrier"]}}</td>  
+            <td>{{row["id_province"]}}</td>  
+            <td>{{row["weight"]}}</td> 
+	    <td>{{row["price"]}}</td>	 
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html> 
