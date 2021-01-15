@@ -1,0 +1,4 @@
+certifi
+gunicorn
+flask
+pysqlite3
