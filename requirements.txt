@@ -1,4 +1,0 @@
-certifi
-gunicorn
-flask
-sqlite3
